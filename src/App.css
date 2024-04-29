@@ -1,0 +1,16 @@
+* {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.grey {
+  background-color: #f5f3f3;
+}
+.mainfont {
+  font-size: 26px;
+}
+@media (min-width: 900px) {
+  .mainfont {
+    font-size: 32px;
+  }
+}
