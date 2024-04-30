@@ -14,3 +14,30 @@
     font-size: 32px;
   }
 }
+.loginform {
+  background-image: url("./assets/contact.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.loginform form {
+  background-color: #ffffffd9;
+  width: 777px;
+}
+.loginform form > input,
+.check,
+.loginform form button {
+  width: 465px;
+  height: 50px;
+  border-radius: 15px 0px 0px 0px;
+}
+@media (max-width: 768px) {
+  .loginform form {
+    width: 600px;
+  }
+}
+@media (max-width: 425px) {
+  .loginform form {
+    width: 300px;
+  }
+}

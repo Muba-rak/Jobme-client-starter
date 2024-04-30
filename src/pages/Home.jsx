@@ -7,15 +7,18 @@ import {
   UploadCv,
   Testimonials,
 } from "../components/HomeComponents";
+import Layout from "../components/Layout";
 
 const Home = () => {
   return (
     <div>
-      <Hero />
-      <SectionOne />
-      <HowItWorks />
-      <UploadCv />
-      <Testimonials />
+      <Layout>
+        <Hero />
+        <SectionOne />
+        <HowItWorks />
+        <UploadCv />
+        <Testimonials />
+      </Layout>
     </div>
   );
 };

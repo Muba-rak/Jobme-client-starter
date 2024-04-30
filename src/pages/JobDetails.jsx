@@ -5,26 +5,29 @@ import {
   JobDescription,
   JobInfo,
 } from "../components/JobDetailsComponent";
+import Layout from "../components/Layout";
 
 const JobDetails = () => {
   return (
     <div>
-      <div className="container mb-5">
-        <div className="row gap-5">
-          <div className="col-lg-5">
-            <div>
-              <JobInfo />
+      <Layout>
+        <div className="container mb-5">
+          <div className="row gap-5">
+            <div className="col-lg-5">
+              <div>
+                <JobInfo />
+              </div>
+              <div className="mt-4 d-none d-md-block">
+                <Map />
+              </div>
             </div>
-            <div className="mt-4 d-none d-md-block">
-              <Map />
+            <div className="col-lg-6 mt-3 mt-md-0">
+              <JobDescription />
             </div>
-          </div>
-          <div className="col-lg-6 mt-3 mt-md-0">
-            <JobDescription />
           </div>
         </div>
-      </div>
-      <RelatedJobs />
+        <RelatedJobs />
+      </Layout>
     </div>
   );
 };

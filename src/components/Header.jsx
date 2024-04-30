@@ -1,7 +1,11 @@
 import React from "react";
 
 const Header = () => {
-  return <header style={{ backgroundColor: "#fff" }}>header</header>;
+  return (
+    <header>
+      <nav className="container">header</nav>
+    </header>
+  );
 };
 
 export default Header;
