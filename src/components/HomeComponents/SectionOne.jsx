@@ -23,7 +23,7 @@ const SectionOne = () => {
               quis sed placerat lacus eupiii pretium duis semper est ac nec
               ultricie.
             </p>
-            <Link to="/job">
+            <Link to="/jobs">
               <button className="btn btn-info text-white px-3 fs-4">
                 Discover more
               </button>
@@ -43,7 +43,7 @@ const SectionOne = () => {
               quis sed placerat lacus eupiii pretium duis semper est ac nec
               ultricie.
             </p>
-            <Link to="/job">
+            <Link to="/jobs">
               <button className="btn btn-info text-white px-3 fs-4">
                 Discover more
               </button>
