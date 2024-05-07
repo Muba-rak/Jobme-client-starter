@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Job, Contact, JobDetails, Login } from "./pages";
-import { Header, Footer } from "./components";
+import { Home, Job, Contact, JobDetails, Login, Register } from "./pages";
 
 function App() {
   return (
@@ -13,6 +12,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/job/:jobId" element={<JobDetails />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
     </>
