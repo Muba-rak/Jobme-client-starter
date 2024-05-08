@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
+import MyButton from "./MyButton";
 
 const JobCardLong = ({
   _id,
@@ -24,19 +25,21 @@ const JobCardLong = ({
           </div>
         </div>
 
-        <div className="col-md-4 col-lg-3">
-          <p className="d-inline-block text-info bg-info-subtle  px-3 text-capitalize rounded-2 my-3 my-md-1">
-            {mode}{" "}
-          </p>
-          <p className="text-secondary fs-5">
-            {" "}
-            <span>
-              <AiOutlineClockCircle className="text-info" />{" "}
-            </span>{" "}
-            Posted {createdAt}{" "}
-          </p>
+        <div className="col-md-4 col-lg-3 d-flex  justify-content-lg-center align-items-center">
+          <div>
+            <p className="d-inline-block text-info bg-info-subtle  px-3 text-capitalize rounded-2 my-3 my-md-1">
+              {mode}{" "}
+            </p>
+            <p className="text-secondary fs-5">
+              {" "}
+              <span>
+                <AiOutlineClockCircle className="text-info" />{" "}
+              </span>{" "}
+              Posted {createdAt}{" "}
+            </p>
+          </div>
         </div>
-        <div className="col-md-2 col-lg-3 d-flex justify-content-start align-items-start flex-md-column gap-2 gap-md-0">
+        <div className="col-md-2 col-lg-3 d-flex justify-content-lg-center align-items-center flex-md-column gap-2 gap-md-0">
           <p className="text-secondary d-flex align-items-center justify-content-center">
             <span className="pb-1 pe-1">
               <CiLocationOn />{" "}
@@ -48,9 +51,7 @@ const JobCardLong = ({
         <div className="col-md-2 col-lg-3 d-flex justify-content-md-center align-items-start">
           {" "}
           <Link to={`/job/${_id}`}>
-            <button className="btn btn-info fs-5 text-white rounded-3">
-              Apply Now
-            </button>
+            <MyButton content={"Apply Now"} />
           </Link>
         </div>
       </div>

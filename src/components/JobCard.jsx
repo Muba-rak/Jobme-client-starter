@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import MyButton from "./MyButton";
 
 const JobCard = ({
   _id,
@@ -47,9 +48,7 @@ const JobCard = ({
           </div>
         </div>
         <Link to={`/job/${_id}`}>
-          <button className="btn btn-info fs-5 text-white rounded-3">
-            Apply Now
-          </button>
+          <MyButton content={"Apply Now"} />
         </Link>
       </div>
     </div>

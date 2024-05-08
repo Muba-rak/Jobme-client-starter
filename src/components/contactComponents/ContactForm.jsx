@@ -1,4 +1,5 @@
 import React from "react";
+import MyButton from "../MyButton";
 
 const ContactForm = () => {
   return (
@@ -39,9 +40,7 @@ const ContactForm = () => {
             rows="10"
           ></textarea>
         </div>
-        <button className="btn btn-info rounded-4 my-3 text-white w-100 p-2 fs-5">
-          Send Message
-        </button>
+        <MyButton content={"Send Message"} extraClass={"w-100 p-2 rounded-4"} />
       </form>
     </div>
   );

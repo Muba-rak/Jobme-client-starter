@@ -1,6 +1,14 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Job, Contact, JobDetails, Login, Register } from "./pages";
+import {
+  Home,
+  Job,
+  Contact,
+  JobDetails,
+  Login,
+  Register,
+  Error404,
+} from "./pages";
 
 function App() {
   return (
@@ -13,6 +21,7 @@ function App() {
           <Route path="/job/:jobId" element={<JobDetails />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>
     </>

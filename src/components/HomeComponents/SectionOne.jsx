@@ -2,6 +2,7 @@ import React from "react";
 import people from "../../assets/Frame 9.png";
 import vector from "../../assets/Vector.png";
 import { Link } from "react-router-dom";
+import MyButton from "../MyButton";
 
 const SectionOne = () => {
   return (
@@ -24,9 +25,7 @@ const SectionOne = () => {
               ultricie.
             </p>
             <Link to="/jobs">
-              <button className="btn btn-info text-white px-3 fs-4">
-                Discover more
-              </button>
+              <MyButton content={"Discover More"} />
             </Link>
           </div>
         </div>
@@ -44,9 +43,7 @@ const SectionOne = () => {
               ultricie.
             </p>
             <Link to="/jobs">
-              <button className="btn btn-info text-white px-3 fs-4">
-                Discover more
-              </button>
+              <MyButton content={"Discover More"} />
             </Link>
           </div>
           <div className="col-xl-5 mx-auto text-center d-none d-xl-block">
