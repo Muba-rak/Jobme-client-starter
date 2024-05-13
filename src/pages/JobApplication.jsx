@@ -69,7 +69,7 @@ const JobApplication = () => {
                 doc. docx. pdf.{" "}
               </p>
             </div>
-            <div className="form-check">
+            <div className="form-check mb-4">
               <input
                 type="checkbox"
                 id="agree"
