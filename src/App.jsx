@@ -8,6 +8,7 @@ import {
   Login,
   Register,
   Error404,
+  JobApplication,
 } from "./pages";
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           <Route path="/job/:jobId" element={<JobDetails />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/application/:JobId" element={<JobApplication />} />
+
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>

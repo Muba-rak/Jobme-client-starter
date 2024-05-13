@@ -142,3 +142,11 @@ footer p span {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.form-field {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .form-field {
+    width: 50%;
+  }
+}
