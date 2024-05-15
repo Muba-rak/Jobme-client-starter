@@ -10,7 +10,9 @@ const Hero = () => {
         <h1 className="text-white mainfont text-center fw-bold mb-4">
           FIND JOBS AND HIRE AMAZING <br /> TALENTS!
         </h1>
-        <SearchForm />
+        <div className="d-none d-lg-block">
+          <SearchForm />
+        </div>
         <div className="text-center d-lg-none">
           <Link to="/jobs">
             <MyButton content={"Find More Jobs"} />

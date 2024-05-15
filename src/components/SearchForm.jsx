@@ -3,7 +3,7 @@ import MyButton from "./MyButton";
 
 const SearchForm = () => {
   return (
-    <div className="searchform   p-3">
+    <div className="searchform p-3">
       <form className="container d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-center">
         <select name="" id="job" className="py-2  px-xl-4 rounded-2 fs-5 ">
           <option value="">Select Job Type</option>

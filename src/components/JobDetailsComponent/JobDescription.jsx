@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const JobDescription = () => {
   return (
@@ -41,9 +42,11 @@ const JobDescription = () => {
             </p>
           );
         })}
-        <button className="btn btn-info fs-5 text-white rounded-3 mt-4">
-          Apply Now
-        </button>
+        <Link to={`/application/id`}>
+          <button className="btn btn-info fs-5 text-white rounded-3 mt-4">
+            Apply Now
+          </button>
+        </Link>
       </div>
     </div>
   );

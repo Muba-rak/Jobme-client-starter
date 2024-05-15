@@ -57,3 +57,11 @@ header a:hover {
     width: 300px;
   }
 }
+.page-100 {
+  min-height: calc(100vh - 7.9rem);
+  padding: 5rem 0;
+}
+
+.page {
+  min-height: calc(100vh - (30vh + 10rem));
+}
