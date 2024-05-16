@@ -5,11 +5,11 @@ import Err from "../assets/err.jpg";
 const Error404 = () => {
   return (
     <section className="container">
-      <div className="row d-flex justify-content-center align-items-center p-5">
+      <div className="row d-flex justify-content-center align-items-center flex-lg-row-reverse p-5">
         <div className="col-lg-6">
           <img src={Err} alt="" className="img-fluid" />
         </div>
-        <div className="col-lg-6 text-center">
+        <div className="col-lg-6 text-center text-lg-start">
           <div>
             <h1 className="text-info display-4">OOOps!</h1>
             <h3 className="my-3">Page Not Found</h3>

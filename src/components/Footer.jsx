@@ -11,7 +11,7 @@ const Footer = () => {
     { id: 1, path: "/jobs", content: "Find Jobs" },
     { id: 2, path: "/login", content: "Login" },
     { id: 3, path: "/register", content: "Register" },
-    { id: 1, path: "/contact", content: "Contact" },
+    { id: 4, path: "/contact", content: "Contact" },
   ];
   return (
     <footer className="border border-start-0 border-end-0 border-top-2 border-secondary border-bottom-2 py-5 my-5">

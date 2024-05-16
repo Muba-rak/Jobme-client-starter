@@ -79,3 +79,7 @@ header a:hover {
 .page {
   min-height: calc(100vh - (30vh + 10rem));
 }
+
+#map {
+  height: 180px;
+}
