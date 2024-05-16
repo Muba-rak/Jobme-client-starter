@@ -24,6 +24,7 @@ const JobApplication = () => {
                 <label htmlFor="lastname">*Last Name</label>
                 <input
                   type="text"
+                  id="lastname"
                   className="form-control shadow-none p-3 rounded-4"
                 />
               </div>
@@ -33,6 +34,7 @@ const JobApplication = () => {
                 <label htmlFor="email">*Email Address</label>
                 <input
                   type="email"
+                  id="email"
                   className="form-control shadow-none p-3 rounded-4"
                 />
               </div>

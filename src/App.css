@@ -35,26 +35,40 @@ header a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.registerform {
+  background-image: url("./assets/signup.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+.eye {
+  top: 20%;
+}
+
 .loginform form {
   background-color: #ffffffd9;
-  width: 777px;
-  height: 600px;
 }
-.loginform form > input,
-.check,
+
 .loginform form button {
-  width: 465px;
   height: 50px;
-  border-radius: 15px 0px 0px 0px;
+  border-radius: 15px;
 }
-@media (max-width: 768px) {
-  .loginform form {
-    width: 600px;
+@media (min-width: 900px) {
+  .loginform form,
+  .registerform form {
+    width: 750px;
   }
-}
-@media (max-width: 425px) {
-  .loginform form {
-    width: 300px;
+
+  .neededwidth {
+    width: 465px;
+    margin: auto;
+  }
+  .loginform form > input,
+  .loginform form div.position-relative,
+  .submitbtn {
+    width: 465px;
+    margin: auto;
   }
 }
 .page-100 {
