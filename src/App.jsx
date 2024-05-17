@@ -9,6 +9,7 @@ import {
   Register,
   Error404,
   JobApplication,
+  AppliedJobs,
 } from "./pages";
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/application/:jobId" element={<JobApplication />} />
+          <Route path="/appliedjobs" element={<AppliedJobs />} />
+
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>

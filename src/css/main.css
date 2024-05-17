@@ -1,3 +1,11 @@
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.header a:hover,
+.header button:hover {
+  color: aqua;
+}
 .hero-section {
   background-image: url("../assets/hero.png");
   background-position: center;
@@ -149,4 +157,80 @@ footer p span {
   .form-field {
     width: 50%;
   }
+}
+.grey {
+  background-color: #f5f3f3;
+}
+.mainfont {
+  font-size: 26px;
+}
+@media (min-width: 900px) {
+  .mainfont {
+    font-size: 32px;
+  }
+}
+.loginform {
+  background-image: url("./assets/Log In.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.registerform {
+  background-image: url("./assets/signup.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+.eye {
+  top: 20%;
+  right: 15px;
+}
+
+.loginform form {
+  background-color: #ffffffd9;
+  opacity: 0.9;
+}
+
+.loginform form button {
+  height: 50px;
+  border-radius: 15px;
+}
+.neededwidth {
+  width: 100%;
+}
+.registerform form {
+  scale: 0.9;
+  opacity: 0.9;
+}
+@media (min-width: 900px) {
+  .registerform {
+    overflow: hidden;
+  }
+  .loginform form,
+  .registerform form {
+    width: 700px;
+  }
+  .registerform form {
+    scale: 0.85;
+  }
+
+  .neededwidth {
+    width: 465px;
+    margin: auto;
+  }
+  .loginform form > input,
+  .loginform form div.position-relative,
+  .submitbtn {
+    width: 465px;
+    margin: auto;
+  }
+}
+.page-100 {
+  min-height: calc(100vh - 7.9rem);
+  padding: 5rem 0;
+}
+
+.page {
+  min-height: calc(100vh - (30vh + 10rem));
 }
