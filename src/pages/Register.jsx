@@ -8,8 +8,13 @@ const Register = () => {
   const toggleShow = () => {
     setShow(!show);
   };
+  const [show2, setShow2] = useState(false);
+  const toggleShow2 = () => {
+    setShow2(!show2);
+  };
   const handleRegister = (e) => {
     e.preventDefault();
+    alert("alert");
   };
   return (
     <div className="registerform d-flex align-items-center justify-content-center vw-100 vh-100 ">
@@ -39,7 +44,7 @@ const Register = () => {
           />
           <button
             onClick={toggleShow}
-            className="bg-transparent border-0 text-secondary position-absolute eye end-0"
+            className="bg-transparent border-0 text-secondary position-absolute eye "
           >
             {" "}
             {show ? <FaRegEyeSlash /> : <FaRegEye />}{" "}
@@ -47,29 +52,32 @@ const Register = () => {
         </div>
         <div className="position-relative">
           <input
-            type={show ? "text" : "password"}
+            type={show2 ? "text" : "password"}
             placeholder="Confirm Password"
             className="  rounded-4 shadow-none form-control  mx-auto my-3 text-dark border-1 border-secondary p-3"
           />
           <button
-            onClick={toggleShow}
-            className="bg-transparent border-0 text-secondary position-absolute eye end-0"
+            onClick={toggleShow2}
+            className="bg-transparent border-0 text-secondary position-absolute eye"
           >
             {" "}
-            {show ? <FaRegEyeSlash /> : <FaRegEye />}{" "}
+            {show2 ? <FaRegEyeSlash /> : <FaRegEye />}{" "}
           </button>
         </div>
 
         <div className="d-flex justify-content-between align-items-center mx-auto my-3 check">
           <div className="d-flex justify-content-center align-items-center gap-2">
             <input type="checkbox" className="form-check-input" />
-            <span>Remember Me</span>
+            <span className="pt-2">Remember Me</span>
           </div>
           {/* <div>
             <p>Forgot Password?</p>
           </div> */}
         </div>
-        <MyButton content={"Log In"} extraClass={"submitbtn mx-auto d-block"} />
+        <MyButton
+          content={"Sign Up"}
+          extraClass={"submitbtn mx-auto d-block w-100"}
+        />
 
         <div className="mt-3 text-center">
           <p>Or continue with</p>

@@ -43,14 +43,17 @@ const Login = () => {
 
         <div className="d-flex justify-content-between align-items-center mx-auto my-3 check neededwidth">
           <div className="d-flex justify-content-center align-items-center gap-2">
-            <input type="checkbox" className="form-check-input" />
-            <span>Remember Me</span>
+            <input type="checkbox" className="form-check-input shadow-none" />
+            <span className="pt-2">Remember Me</span>
           </div>
           {/* <div>
             <p>Forgot Password?</p>
           </div> */}
         </div>
-        <MyButton content={"Log In"} extraClass={"submitbtn mx-auto d-block"} />
+        <MyButton
+          content={"Log In"}
+          extraClass={"submitbtn mx-auto d-block neededwidth"}
+        />
 
         <div className="mt-3 text-center">
           <p>Or continue with</p>

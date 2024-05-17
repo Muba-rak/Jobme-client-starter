@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/Layout";
 import MyButton from "../components/MyButton";
+import { SuccessModal } from "../components";
 
 const JobApplication = () => {
+  const [showModal, setShowModal] = useState(true);
+  const handleJobSubmit = (e) => {
+    e.preventDefault();
+    setShowModal(true);
+  };
   return (
     <div>
       <Layout>
+        <SuccessModal showModal={showModal} setShowModal={setShowModal} />
         <div
           className="bg-info-subtle mx-auto rounded-4"
           style={{ maxWidth: "950px" }}
         >
-          <form className="p-4">
+          <form onSubmit={handleJobSubmit} className="p-4">
             <div className="d-flex justify-content-between gap-3 flex-column flex-md-row my-2">
               <div className="w-100">
                 <label htmlFor="firstname">*First Name</label>
