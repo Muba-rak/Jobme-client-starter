@@ -6,12 +6,18 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { IoPersonSharp } from "react-icons/io5";
-import { IoIosLogOut } from "react-icons/io";
+import { IoIosLogOut, IoMdMenu, IoMdClose } from "react-icons/io";
 
 function Header() {
   const [show, setShow] = useState(true);
+  const [expanded, setExpanded] = useState(false);
+
   const handleLogout = () => {
     setShow(false);
+  };
+
+  const handleToggle = () => {
+    setExpanded(!expanded);
   };
   return (
     <Navbar expand="lg" className="bg-white header py-3">
@@ -22,28 +28,34 @@ function Header() {
             <img src={logo} alt="brand Logo" />
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle}>
+          {expanded ? <IoMdClose size={28} /> : <IoMdMenu size={28} />}
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto d-lg-flex gap-2 gap-lg-5 links">
             {show ? (
-              <Link to="/appliedjobs" className="fs-5 ">
+              <Link to="/appliedjobs" className="fs-5 nav-link ">
                 Applied Jobs
               </Link>
             ) : (
-              <Link to="/" className="fs-5 ">
+              <Link to="/" className="fs-5 nav-link ">
                 Home
               </Link>
             )}
-            <Link to="/jobs" className="fs-5 ">
+            <Link to="/jobs" className="fs-5 nav-link ">
               Job Listings
             </Link>
-            <Link to="/contact" className="fs-5 ">
+            <Link to="/contact" className="fs-5 nav-link">
               Contact Us
             </Link>
           </Nav>
           {show ? (
             <Nav className="logout ms-lg-auto d-flex flex-row gap-3 border border-1 border-dark rounded-pill py-3 justify-content-center align-items-center">
-              <Link to="/appliedjobs">
+              <Link
+                to="/appliedjobs"
+                className="nav-link"
+                aria-label="User Profile"
+              >
                 <IoPersonSharp className="fs-4" />
               </Link>
               <span> | </span>
