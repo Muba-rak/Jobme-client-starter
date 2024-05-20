@@ -17,7 +17,7 @@ const JobDetails = () => {
               <div>
                 <JobInfo />
               </div>
-              <div className="mt-4 d-none d-md-block">
+              <div className="mt-4 d-block">
                 <Map />
               </div>
             </div>

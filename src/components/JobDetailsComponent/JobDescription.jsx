@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import MyButton from "../MyButton";
 
 const JobDescription = () => {
   return (
@@ -21,7 +22,7 @@ const JobDescription = () => {
           Imperdiet purus nulla mi consequat nulla.
         </p>
       </div>
-      <div className="my-4">
+      <div className="my-3">
         <h1>Duties & Responsibilities:</h1>
         {[1, 2, 3, 4, 5, 6].map((p, i) => {
           return (
@@ -32,7 +33,7 @@ const JobDescription = () => {
           );
         })}
       </div>
-      <div className="my-4">
+      <div className="my-3">
         <h1>Skills & Qualifications:</h1>
         {[1, 2, 3, 4, 5, 6].map((p, i) => {
           return (
@@ -43,9 +44,7 @@ const JobDescription = () => {
           );
         })}
         <Link to={`/application/id`}>
-          <button className="btn btn-info fs-5 text-white rounded-3 mt-4">
-            Apply Now
-          </button>
+          <MyButton content={"Apply Now"} extraClass={"rounded-3 mt-4 fs-5"} />
         </Link>
       </div>
     </div>
