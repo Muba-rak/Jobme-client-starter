@@ -6,6 +6,10 @@
 .header button:hover {
   color: aqua;
 }
+.logout {
+  width: 146px;
+  height: 56px;
+}
 .hero-section {
   background-image: url("../assets/hero.png");
   background-position: center;
@@ -170,13 +174,13 @@ footer p span {
   }
 }
 .loginform {
-  background-image: url("./assets/Log In.png");
+  background-image: url("../assets/Log In.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .registerform {
-  background-image: url("./assets/signup.png");
+  background-image: url("../assets/signup.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

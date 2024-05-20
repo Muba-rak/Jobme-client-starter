@@ -67,7 +67,7 @@ const Register = () => {
 
         <div className="d-flex justify-content-between align-items-center mx-auto my-3 check">
           <div className="d-flex justify-content-center align-items-center gap-2">
-            <input type="checkbox" className="form-check-input" />
+            <input type="checkbox" className="form-check-input shadow-none" />
             <span className="pt-2">Remember Me</span>
           </div>
           {/* <div>

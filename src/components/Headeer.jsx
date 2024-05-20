@@ -42,7 +42,7 @@ function Header() {
             </Link>
           </Nav>
           {show ? (
-            <Nav className="ms-auto d-lg-flex gap-3 border border-1 border-dark rounded-pill py-3 px-5">
+            <Nav className="logout ms-lg-auto d-flex flex-row gap-3 border border-1 border-dark rounded-pill py-3 justify-content-center align-items-center">
               <Link to="/appliedjobs">
                 <IoPersonSharp className="fs-4" />
               </Link>

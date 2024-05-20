@@ -25,7 +25,6 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/application/:jobId" element={<JobApplication />} />
           <Route path="/appliedjobs" element={<AppliedJobs />} />
-
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>
