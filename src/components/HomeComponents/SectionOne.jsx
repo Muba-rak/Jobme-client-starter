@@ -10,7 +10,12 @@ const SectionOne = () => {
       <div className="container">
         <div className=" row  justify-content-between align-items-center">
           <div className="col-xl-5 mx-auto text-center d-none d-xl-block">
-            <img src={people} alt="people talking" className="" />
+            <img
+              src={people}
+              alt="people talking"
+              className=""
+              loading="lazy"
+            />
           </div>
           <div className="col-xl-5 mx-auto my-3 my-lg-0">
             <h2 className="mainfont mb-2 fw-medium">
@@ -47,7 +52,7 @@ const SectionOne = () => {
             </Link>
           </div>
           <div className="col-xl-5 mx-auto text-center d-none d-xl-block">
-            <img src={vector} alt="lady" className="" />
+            <img src={vector} alt="lady" className="" loading="lazy" />
           </div>
         </div>
       </div>
