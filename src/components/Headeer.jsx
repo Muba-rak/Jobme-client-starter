@@ -9,7 +9,7 @@ import { IoPersonSharp } from "react-icons/io5";
 import { IoIosLogOut, IoMdMenu, IoMdClose } from "react-icons/io";
 
 function Header() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
   const handleLogout = () => {

@@ -14,7 +14,6 @@ const Register = () => {
   };
   const handleRegister = (e) => {
     e.preventDefault();
-    alert("alert");
   };
   return (
     <div className="registerform d-flex align-items-center justify-content-center vw-100 vh-100 ">
