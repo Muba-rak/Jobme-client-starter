@@ -11,7 +11,7 @@
   height: 56px;
 }
 .hero-section {
-  background-image: url("../assets/hero.png");
+  background-image: url("../assets/hero.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,7 +148,7 @@ footer p span {
 
 /* contact */
 .contacthero {
-  background-image: url("../assets/contact.png");
+  background-image: url("../assets/contact.webp");
   height: 353px;
   background-position: center;
   background-repeat: no-repeat;
@@ -174,13 +174,13 @@ footer p span {
   }
 }
 .loginform {
-  background-image: url("../assets/Log In.png");
+  background-image: url("../assets/LogIn.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .registerform {
-  background-image: url("../assets/signup.png");
+  background-image: url("../assets/signup.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
