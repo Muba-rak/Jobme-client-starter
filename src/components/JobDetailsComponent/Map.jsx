@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 const Map = () => {
-  const location = "United Kingdom";
+  const location = "Lagos Nigeria";
   const [l, setL] = useState({});
   const [loading, setIsLoading] = useState(true);
   const getGeoLocation = async () => {
