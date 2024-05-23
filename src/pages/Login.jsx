@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MyButton from "../components/MyButton";
-import { FaRegEye, FaRegEyeSlash, FaHome } from "react-icons/fa";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import logo from "../assets/logo.png";
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -18,10 +18,9 @@ const Login = () => {
         onSubmit={handleLogin}
         className="rounded-4 bg-white p-5 needs-validation"
       >
-        {/* <Link to="/" className="d-block mx-auto"> */}
-        {/* <img src={logo} alt="" style={{ width: "90px" }} /> */}
-        {/* <FaHome size={30} className="text-info" /> */}
-        {/* </Link> */}
+        <Link to="/" className="d-block mx-auto neededwidth my-2">
+          <img src={logo} alt="" style={{ width: "90px" }} />
+        </Link>
         <h2 className="text-center fs-4">Welcome Back!</h2>
         <p className="text-center fs-3 mb-3">Log In to hit your dream job!</p>
 
