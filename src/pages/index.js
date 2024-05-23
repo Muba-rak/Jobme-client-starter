@@ -1,12 +1,13 @@
-import Home from "./Home";
-import Job from "./Job";
-import Contact from "./Contact";
-import JobDetails from "./JobDetails";
-import Login from "./Login";
-import Register from "./Register";
-import JobApplication from "./JobApplication";
-import AppliedJobs from "./AppliedJobs";
-import Error404 from "./Error404";
+import { lazy } from "react";
+const Home = lazy(() => import("./Home"));
+const Job = lazy(() => import("./Job"));
+const Contact = lazy(() => import("./Contact"));
+const JobDetails = lazy(() => import("./JobDetails"));
+const Login = lazy(() => import("./Login"));
+const Register = lazy(() => import("./Register"));
+const JobApplication = lazy(() => import("./JobApplication"));
+const AppliedJobs = lazy(() => import("./AppliedJobs"));
+const Error404 = lazy(() => import("./Error404"));
 
 export {
   Home,
