@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Err from "../assets/err.jpg";
+import Err from "../assets/rafiki.png";
 
 const Error404 = () => {
   return (
-    <section className="container">
-      <div className="row d-flex justify-content-center align-items-center flex-lg-row-reverse p-5">
+    <section className="container ">
+      <div className="row d-flex justify-content-center align-items-center flex-lg-row-reverse p-5 vh-100">
         <div className="col-lg-6">
           <img src={Err} alt="" className="img-fluid" />
         </div>
