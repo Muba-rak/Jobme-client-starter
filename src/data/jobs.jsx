@@ -16,6 +16,8 @@ export const jobs = [
     location: "United Kingdom",
     createdAt: "2 Hours ago",
     logo: <FcGoogle />,
+    status: "hired",
+    dateApplied: "February 20, 2024",
   },
   {
     _id: 2,
@@ -26,6 +28,8 @@ export const jobs = [
     location: "Belgium",
     createdAt: "6 Months ago",
     logo: <FaFacebookF />,
+    status: "not hired",
+    dateApplied: "February 25, 2024",
   },
   {
     _id: 3,
@@ -36,6 +40,8 @@ export const jobs = [
     location: "Lagos",
     createdAt: "2 Days ago",
     logo: <FaLinkedin />,
+    status: "interviewing",
+    dateApplied: "March 20, 2024",
   },
   {
     _id: 4,
@@ -46,6 +52,8 @@ export const jobs = [
     location: "Abuja",
     createdAt: "6 Months ago",
     logo: <FcGoogle />,
+    status: "interviewing",
+    dateApplied: "March 15, 2024",
   },
   {
     _id: 5,
@@ -56,6 +64,8 @@ export const jobs = [
     location: "Athens",
     createdAt: "6 Months ago",
     logo: <FaFacebookF />,
+    status: "hired",
+    dateApplied: "April 2, 2024",
   },
   {
     _id: 6,
@@ -66,6 +76,8 @@ export const jobs = [
     location: "Lagos",
     createdAt: "2 Days ago",
     logo: <FaLinkedin />,
+    status: "not hired",
+    dateApplied: "April 10, 2024",
   },
   {
     _id: 7,
@@ -76,6 +88,8 @@ export const jobs = [
     location: "San Francisco",
     createdAt: "1 Week ago",
     logo: <FaGoogle />,
+    status: "offered",
+    dateApplied: "April 11, 2024",
   },
 
   {
@@ -87,6 +101,8 @@ export const jobs = [
     location: "New York",
     createdAt: "3 Days ago",
     logo: <FaFacebook />,
+    status: "not interested",
+    dateApplied: "April 14, 2024",
   },
 
   {
@@ -98,6 +114,8 @@ export const jobs = [
     location: "Seattle",
     createdAt: "4 Days ago",
     logo: <FaAmazon />,
+    status: "hired",
+    dateApplied: "April 15, 2024",
   },
 ];
 
@@ -125,5 +143,54 @@ export const testimonials = [
     location: "Germany",
     testimonial:
       "“Lorem ipsum dolor sit amet consectetur. Etiam elit nisl aliquam tempor purus ac. Vestibulum eu euismod enim elit. Nunc phasellus aliquet eu gravida massa vel.”",
+  },
+];
+import { MdLogout, MdClose } from "react-icons/md";
+import { AiOutlineWechat } from "react-icons/ai";
+import { FaHandHolding } from "react-icons/fa";
+import { FaThumbsUp, FaThumbsDown } from "react-icons/fa6";
+
+export const status = [
+  {
+    id: 1,
+    value: "applied",
+    content: "Applied",
+    icon: <MdLogout />,
+    bg: "bg-success",
+  },
+  {
+    id: 2,
+    value: "interview",
+    content: "Interviewing",
+    icon: <AiOutlineWechat />,
+    bg: "bg-success",
+  },
+  {
+    id: 3,
+    value: "offer",
+    content: "Recieved Offer",
+    icon: <FaHandHolding />,
+    bg: "bg-success",
+  },
+  {
+    id: 4,
+    value: "hired",
+    content: "Hired By Employer",
+    icon: <FaThumbsUp />,
+    bg: "bg-success",
+  },
+  {
+    id: 5,
+    value: "not hired",
+    content: "Not Hired By Employer",
+    icon: <FaThumbsDown />,
+    bg: "bg-danger",
+  },
+  {
+    id: 6,
+    value: "not interested",
+    content: "No Longer Interested",
+    icon: <MdClose />,
+    bg: "bg-danger",
   },
 ];

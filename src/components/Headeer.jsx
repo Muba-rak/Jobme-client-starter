@@ -9,7 +9,7 @@ import { IoPersonSharp } from "react-icons/io5";
 import { IoIosLogOut, IoMdMenu, IoMdClose } from "react-icons/io";
 
 function Header() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const [expanded, setExpanded] = useState(false);
 
   const handleLogout = () => {
@@ -50,7 +50,7 @@ function Header() {
             </Link>
           </Nav>
           {show ? (
-            <Nav className="logout ms-lg-auto d-flex flex-row gap-3 border border-1 border-dark rounded-pill py-3 justify-content-center align-items-center">
+            <Nav className="logout ms-lg-auto d-flex flex-row gap-3 border border-1 border-dark rounded-pill py-2 px-3 justify-content-center align-items-center">
               <Link
                 to="/appliedjobs"
                 className="nav-link"

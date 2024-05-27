@@ -18,7 +18,7 @@ const Login = () => {
         onSubmit={handleLogin}
         className="rounded-4 bg-white p-5 needs-validation"
       >
-        <Link to="/" className="d-block mx-auto neededwidth my-2">
+        <Link to="/" className="d-block  my-2 text-center">
           <img src={logo} alt="" style={{ width: "90px" }} />
         </Link>
         <h2 className="text-center fs-4">Welcome Back!</h2>
