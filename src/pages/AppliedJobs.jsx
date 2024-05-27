@@ -6,6 +6,13 @@ import UpdateStatusModal from "../components/UpdateStatusModal";
 const AppliedJobs = () => {
   const [showModal, setShowModal] = useState(true);
   const [updateId, setUpdateId] = useState("");
+  const setBg = (status) => {
+    if (status.includes("not")) {
+      return "bg-danger";
+    } else {
+      return "bg-success";
+    }
+  };
   return (
     <div>
       <Layout>
@@ -54,7 +61,9 @@ const AppliedJobs = () => {
 
                     <p
                       style={{ width: "144px", fontSize: "18px" }}
-                      className="btn border border-1 border-tertiary rounded-4 bg-success text-white px-3 text-capitalize"
+                      className={`${setBg(
+                        status
+                      )} btn border border-1 border-tertiary rounded-4 text-white px-3 text-capitalize`}
                     >
                       {status}
                     </p>

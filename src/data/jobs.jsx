@@ -64,7 +64,7 @@ export const jobs = [
     location: "Athens",
     createdAt: "6 Months ago",
     logo: <FaFacebookF />,
-    status: "hired",
+    status: "not interested",
     dateApplied: "April 2, 2024",
   },
   {
