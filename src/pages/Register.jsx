@@ -6,6 +6,7 @@ import logo from "../assets/logo.png";
 
 const Register = () => {
   const [show, setShow] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const toggleShow = () => {
     setShow(!show);
   };
@@ -15,6 +16,7 @@ const Register = () => {
   };
   const handleRegister = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
   };
   return (
     <div className="registerform d-flex align-items-center justify-content-center vw-100 vh-100 ">
@@ -78,7 +80,7 @@ const Register = () => {
           </div> */}
         </div>
         <MyButton
-          content={"Sign Up"}
+          content={isSubmitting ? "Signing up....." : "Sign Up"}
           extraClass={"submitbtn mx-auto d-block w-100"}
         />
 
