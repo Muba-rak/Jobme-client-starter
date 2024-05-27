@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import MyButton from "./MyButton";
+import { Link, useLocation } from "react-router-dom";
 
 const SearchForm = () => {
+  const path = useLocation().pathname;
   return (
     <div className="searchform p-3">
       <form className="container d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-center">
@@ -17,9 +18,17 @@ const SearchForm = () => {
         <select name="" id="location" className="py-2 px-xl-4 rounded-2 fs-5">
           <option value="">Select Location</option>
         </select>
-        <button className="btn btn-info text-white py-2 px-xl-4 fs-5">
-          Find Jobs
-        </button>
+        {path === "/" ? (
+          <Link to="/jobs">
+            <button className="btn btn-info text-white py-2 px-xl-4 fs-5">
+              Find Jobs
+            </button>
+          </Link>
+        ) : (
+          <button className="btn btn-info text-white py-2 px-xl-4 fs-5">
+            Find Jobs
+          </button>
+        )}
       </form>
     </div>
   );

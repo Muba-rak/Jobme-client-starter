@@ -36,14 +36,17 @@ const UpdateStatusModal = ({ id, showModal, setShowModal }) => {
 
           {status.map((status) => {
             return (
-              <div key={status.id} onClick={() => setProgress(status.value)}>
+              <div
+                key={status.id}
+                style={{ cursor: "pointer" }}
+                onClick={() => setProgress(status.value)}
+              >
                 <div className="d-flex justify-content-start align-items-center gap-3 my-3">
                   <span
                     className={`${status.bg}  text-white rounded rounded-circle d-flex justify-content-center align-items-center`}
                     style={{ width: "25px", height: "25px" }}
                   >
-                    {" "}
-                    {status.icon}{" "}
+                    {status.icon}
                   </span>
                   <span className="fs-6 fw-bold">{status.content}</span>
                 </div>
