@@ -39,7 +39,7 @@ const AppliedJobs = () => {
                       {dateApplied}{" "}
                     </p>
                   </div>
-                  <div className="d-flex gap-2 justify-content-md-end align-items-center col-md-6">
+                  <div className="d-flex mt-3 mt-md-0 gap-2 justify-content-md-end align-items-center col-md-6">
                     <p>
                       <button
                         onClick={() => {
@@ -52,7 +52,10 @@ const AppliedJobs = () => {
                       </button>
                     </p>
 
-                    <p className="btn border border-1 border-tertiary rounded-4 bg-success text-white fs-5 px-3">
+                    <p
+                      style={{ width: "144px", fontSize: "18px" }}
+                      className="btn border border-1 border-tertiary rounded-4 bg-success text-white px-3 text-capitalize"
+                    >
                       {status}
                     </p>
                   </div>
