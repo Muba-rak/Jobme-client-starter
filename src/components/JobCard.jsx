@@ -36,7 +36,14 @@ const JobCard = ({
       <hr className="my-4" />
       <div className="px-4">
         <div className="d-flex gap-3 align-items-start ">
-          <div className="joblogo">{logo} </div>
+          <div className="joblogo">
+            {" "}
+            <img
+              src={logo}
+              style={{ width: "47px", height: "47px" }}
+              alt=""
+            />{" "}
+          </div>
           <div>
             <h2> {company} </h2>
             <p className="text-secondary">

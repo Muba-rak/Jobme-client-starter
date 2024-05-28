@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import MyButton from "../components/MyButton";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import logo from "../assets/logo.png";
-import { ThreeDots } from "react-loader-spinner";
+
 const Login = () => {
   const [show, setShow] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -58,7 +58,7 @@ const Login = () => {
           </div> */}
         </div>
         <MyButton
-          content={isSubmitting ? "Logging In....." : "Log In"}
+          content={isSubmitting ? `Logging In.....` : "Log In"}
           extraClass={"submitbtn mx-auto d-block neededwidth"}
         />
 

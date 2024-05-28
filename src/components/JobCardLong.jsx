@@ -18,7 +18,9 @@ const JobCardLong = ({
     <div className="py-3 px-4  my-3 mx-auto">
       <div className="row justify-content-between align-items-center p-3 rounded-3 longjobcard">
         <div className="col-md-4 col-lg-3 d-flex gap-3 align-items-center">
-          <div className="joblogo">{logo} </div>
+          <div className="joblogo">
+            <img src={logo} style={{ width: "47px", height: "47px" }} alt="" />
+          </div>
           <div>
             <h2 className="fw-medium fs-5"> {title}</h2>
             <h2 className="fs-6"> {company} </h2>

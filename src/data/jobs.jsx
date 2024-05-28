@@ -1,6 +1,11 @@
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebookF, FaFacebook, FaAmazon, FaGoogle } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import Google from "../assets/google.png";
+import Apple from "../assets/apple.png";
+import FB from "../assets/fb.png";
+import linkedin from "../assets/linkedin.png";
+import microsoft from "../assets/microsoft.png";
 
 import T1 from "../assets/testimonial1.png";
 import T2 from "../assets/testimonial2.png";
@@ -15,7 +20,7 @@ export const jobs = [
     mode: "full time",
     location: "United Kingdom",
     createdAt: "2 Hours ago",
-    logo: <FcGoogle />,
+    logo: Google,
     status: "hired",
     dateApplied: "February 20, 2024",
   },
@@ -27,7 +32,7 @@ export const jobs = [
     mode: "remote",
     location: "Belgium",
     createdAt: "6 Months ago",
-    logo: <FaFacebookF />,
+    logo: FB,
     status: "not hired",
     dateApplied: "February 25, 2024",
   },
@@ -39,7 +44,7 @@ export const jobs = [
     mode: "part time",
     location: "Lagos",
     createdAt: "2 Days ago",
-    logo: <FaLinkedin />,
+    logo: linkedin,
     status: "interviewing",
     dateApplied: "March 20, 2024",
   },
@@ -51,7 +56,7 @@ export const jobs = [
     mode: "full time",
     location: "Abuja",
     createdAt: "6 Months ago",
-    logo: <FcGoogle />,
+    logo: Google,
     status: "interviewing",
     dateApplied: "March 15, 2024",
   },
@@ -63,19 +68,19 @@ export const jobs = [
     mode: "remote",
     location: "Athens",
     createdAt: "6 Months ago",
-    logo: <FaFacebookF />,
+    logo: FB,
     status: "not interested",
     dateApplied: "April 2, 2024",
   },
   {
     _id: 6,
     title: "UX specialist",
-    company: "LinkedIn",
+    company: "Microsoft",
     salary: "50-60k",
     mode: "part time",
     location: "Lagos",
     createdAt: "2 Days ago",
-    logo: <FaLinkedin />,
+    logo: microsoft,
     status: "not hired",
     dateApplied: "April 10, 2024",
   },
@@ -87,7 +92,7 @@ export const jobs = [
     mode: "full time",
     location: "San Francisco",
     createdAt: "1 Week ago",
-    logo: <FaGoogle />,
+    logo: Google,
     status: "offered",
     dateApplied: "April 11, 2024",
   },
@@ -95,12 +100,12 @@ export const jobs = [
   {
     _id: 8,
     title: "DevOps",
-    company: "Facebook",
+    company: "Microsoft",
     salary: "55-65k",
     mode: "contract",
     location: "New York",
     createdAt: "3 Days ago",
-    logo: <FaFacebook />,
+    logo: microsoft,
     status: "not interested",
     dateApplied: "April 14, 2024",
   },
@@ -108,12 +113,12 @@ export const jobs = [
   {
     _id: 9,
     title: "Data Analyst",
-    company: "Amazon",
+    company: "Apple",
     salary: "60-70k",
     mode: "remote",
     location: "Seattle",
     createdAt: "4 Days ago",
-    logo: <FaAmazon />,
+    logo: Apple,
     status: "hired",
     dateApplied: "April 15, 2024",
   },

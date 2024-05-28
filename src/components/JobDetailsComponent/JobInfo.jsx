@@ -5,12 +5,13 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
 import { PiSuitcaseSimpleThin } from "react-icons/pi";
 import { BsFillPersonPlusFill } from "react-icons/bs";
+import logo from "../../assets/google.png";
 
 const JobInfo = () => {
   return (
     <div className="bg-info-subtle p-4 text-start rounded-4">
       <div className="joblogo">
-        <FaGoogle />
+        <img src={logo} style={{ width: "47px", height: "47px" }} alt="" />
       </div>
       <h2 className="fs-3 text-dark mt-2">Digital Marketer</h2>
       <p>

@@ -7,10 +7,12 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { IoPersonSharp } from "react-icons/io5";
 import { IoIosLogOut, IoMdMenu, IoMdClose } from "react-icons/io";
+import UserProfileMenu from "./UserProfileMenu";
 
 function Header() {
-  const [show, setShow] = useState(false);
   const [expanded, setExpanded] = useState(false);
+  const [show, setShow] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleLogout = () => {
     setShow(false);
@@ -19,8 +21,12 @@ function Header() {
   const handleToggle = () => {
     setExpanded(!expanded);
   };
+  const handleShowPersonMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
-    <Navbar expand="lg" className="bg-white header py-3">
+    <Navbar expand="lg" className="bg-white header py-3 ">
       <Container>
         <Navbar.Brand>
           <Link to="/">
@@ -50,14 +56,14 @@ function Header() {
             </Link>
           </Nav>
           {show ? (
-            <Nav className="logout ms-lg-auto d-flex flex-row gap-3 border border-1 border-dark rounded-pill py-2 px-3 justify-content-center align-items-center">
-              <Link
-                to="/appliedjobs"
-                className="nav-link"
+            <Nav className="position-relative logout ms-lg-auto d-flex flex-row gap-3 border border-1 border-dark rounded-pill py-2 px-3 justify-content-center align-items-center">
+              <button
+                className="border-0 bg-transparent"
                 aria-label="User Profile"
+                onClick={handleShowPersonMenu}
               >
                 <IoPersonSharp className="fs-4" />
-              </Link>
+              </button>
               <span> | </span>
               <button
                 className="bg-transparent border-0"
@@ -65,6 +71,14 @@ function Header() {
               >
                 <IoIosLogOut className="text-danger fs-4" />
               </button>
+              {showMenu && (
+                <div
+                  style={{ top: "60px", left: "-10px" }}
+                  className="position-absolute "
+                >
+                  <UserProfileMenu />
+                </div>
+              )}
             </Nav>
           ) : (
             <Nav className="ms-auto d-lg-flex gap-3">
