@@ -4,7 +4,7 @@ import { jobs } from "../data/jobs";
 import UpdateStatusModal from "../components/UpdateStatusModal";
 
 const AppliedJobs = () => {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const [updateId, setUpdateId] = useState("");
   const setBg = (status) => {
     if (status.includes("not")) {
