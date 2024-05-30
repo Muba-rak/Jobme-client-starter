@@ -75,9 +75,6 @@ const Register = () => {
             <input type="checkbox" className="form-check-input shadow-none" />
             <span className="pt-2">Remember Me</span>
           </div>
-          {/* <div>
-            <p>Forgot Password?</p>
-          </div> */}
         </div>
         <MyButton
           content={isSubmitting ? "Signing up....." : "Sign Up"}
@@ -85,7 +82,6 @@ const Register = () => {
         />
 
         <div className="mt-3 text-center">
-          <p>Or continue with</p>
           <p>
             Already have an account?{" "}
             <Link

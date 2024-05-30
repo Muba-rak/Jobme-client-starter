@@ -53,9 +53,6 @@ const Login = () => {
             <input type="checkbox" className="form-check-input shadow-none" />
             <span className="pt-2">Remember Me</span>
           </div>
-          {/* <div>
-            <p>Forgot Password?</p>
-          </div> */}
         </div>
         <MyButton
           content={isSubmitting ? `Logging In.....` : "Log In"}
@@ -63,7 +60,6 @@ const Login = () => {
         />
 
         <div className="mt-3 text-center">
-          <p>Or continue with</p>
           <p>
             Don't have an account?{" "}
             <Link
