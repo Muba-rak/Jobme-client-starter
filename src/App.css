@@ -114,6 +114,23 @@ footer p span {
 .longjobcard {
   box-shadow: 0px 0px 6px 1px #00000026;
 }
+@media (max-width: 991px) {
+  .longjobcard {
+    max-width: 480px;
+  }
+}
+.searchform form > div {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .searchform form > div {
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
 /* select {
   -webkit-appearance: none;
 } */

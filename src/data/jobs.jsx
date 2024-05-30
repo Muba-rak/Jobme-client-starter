@@ -199,3 +199,6 @@ export const status = [
     bg: "bg-danger",
   },
 ];
+
+export const jobType = ["fulltime", "part time", "contract", "freelance"];
+export const mode = ["remote", "on-site", "hybrid"];

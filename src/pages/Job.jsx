@@ -18,6 +18,11 @@ const Job = () => {
         ></div>
         <SearchForm />
         <section className="container py-5">
+          <div>
+            <p className="text-secondary fs-6">
+              Showing <span> 1-10</span> of <span>20</span> results{" "}
+            </p>
+          </div>
           {jobs.map((job) => {
             return <JobCardLong key={job._id} {...job} />;
           })}

@@ -17,7 +17,7 @@ const JobCardLong = ({
   return (
     <div className="py-3 px-4  my-3 mx-auto">
       <div className="row justify-content-between align-items-center p-3 rounded-3 longjobcard">
-        <div className="col-md-4 col-lg-3 d-flex gap-3 align-items-center">
+        <div className=" col-lg-3 d-flex gap-3 align-items-center">
           <div className="joblogo">
             <img src={logo} style={{ width: "47px", height: "47px" }} alt="" />
           </div>
@@ -27,7 +27,7 @@ const JobCardLong = ({
           </div>
         </div>
 
-        <div className="col-md-4 col-lg-3 d-flex  justify-content-lg-center align-items-center">
+        <div className=" col-lg-3 d-flex  justify-content-lg-center align-items-center mt-2 mt-lg-0">
           <div>
             <p className="d-inline-block text-info bg-info-subtle  px-3 text-capitalize rounded-2 my-3 my-md-1">
               {mode}{" "}
@@ -41,7 +41,7 @@ const JobCardLong = ({
             </p>
           </div>
         </div>
-        <div className="col-md-2 col-lg-3 d-flex justify-content-lg-center align-items-center flex-md-column gap-2 gap-md-0">
+        <div className=" col-lg-3 d-flex justify-content-lg-center align-items-center flex-lg-column gap-2 gap-lg-0">
           <p className="text-secondary d-flex align-items-center justify-content-center">
             <span className="pb-1 pe-1">
               <CiLocationOn />{" "}
@@ -50,7 +50,7 @@ const JobCardLong = ({
           </p>
           <p className="text-dark"> $ {salary} </p>
         </div>
-        <div className="col-md-2 col-lg-3 d-flex justify-content-md-center align-items-start">
+        <div className=" col-lg-3 d-flex justify-content-lg-center align-items-start">
           {" "}
           <Link to={`/job/${_id}`}>
             <MyButton content={"Apply Now"} />
