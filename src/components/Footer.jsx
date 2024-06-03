@@ -42,7 +42,7 @@ const Footer = () => {
                   to={link.path}
                   className="text-decoration-none text-dark d-block my-2 my-lg-0"
                 >
-                  <li>{link.content} </li>
+                  <li className="list-type">{link.content} </li>
                 </Link>
               );
             })}

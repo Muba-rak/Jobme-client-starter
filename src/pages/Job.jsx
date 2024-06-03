@@ -18,9 +18,12 @@ const Job = () => {
         ></div>
         <SearchForm />
         <section className="container py-5">
-          <div>
+          <div className="d-flex gap-5 align-items-center container">
             <p className="text-secondary fs-6">
-              Showing <span> 1-10</span> of <span>20</span> results{" "}
+              Showing <span> 10</span> of <span>20</span> results{" "}
+            </p>
+            <p>
+              <button className="btn btn-info text-white">Reset Filters</button>
             </p>
           </div>
           {jobs.map((job) => {
