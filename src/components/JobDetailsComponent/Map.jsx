@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 // import map from "../../assets/map.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import Loader from "../Loader";
 
 const Map = () => {
   const location = "Lagos Nigeria";
@@ -31,7 +32,9 @@ const Map = () => {
 
   return (
     <div>
-      {!loading && (
+      {loading ? (
+        <Loader height={"417px"} />
+      ) : (
         <MapContainer
           center={[l.latitude, l.longitude]}
           zoom={13}

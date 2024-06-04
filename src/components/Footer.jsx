@@ -34,7 +34,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <ul className="d-md-flex gap-4">
+          <ul className="d-md-flex gap-5">
             {links.map((link) => {
               return (
                 <Link

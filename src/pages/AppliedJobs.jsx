@@ -60,7 +60,11 @@ const AppliedJobs = () => {
                     </p>
 
                     <p
-                      style={{ width: "144px", fontSize: "18px" }}
+                      style={{
+                        width: "144px",
+                        fontSize: "18px",
+                        cursor: "auto",
+                      }}
                       className={`${setBg(
                         status
                       )} btn border border-1 border-tertiary rounded-4 text-white px-3 text-capitalize`}

@@ -4,7 +4,7 @@ import MyButton from "../components/MyButton";
 import { SuccessModal } from "../components";
 
 const JobApplication = () => {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const handleJobSubmit = (e) => {
     e.preventDefault();
     setShowModal(true);
