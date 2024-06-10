@@ -13,7 +13,7 @@ Job Me is a fullstack project that allows users to track job application.
 
 ## Introduction
 
-Provide a brief introduction to your project. Explain what it does, its features, and the technologies it uses.
+This is a project that allows users apply for job, track job application status. The project uses React, bootstrap for design and other tools like react-hook-form, react-leaflet, axios etc.
 
 ## Getting Started
 
