@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Layout from "../components/Layout";
 import { jobs } from "../data/jobs";
 import UpdateStatusModal from "../components/UpdateStatusModal";
+import Paginate from "../components/Paginate";
 
 const AppliedJobs = () => {
   const [showModal, setShowModal] = useState(false);
@@ -77,6 +78,13 @@ const AppliedJobs = () => {
             })}
           </div>
         </section>
+        <div className="container">
+          <Paginate
+            currentPage={1}
+            // setCurrentPage={setCurrentPage}
+            numOfPages={3}
+          />
+        </div>
       </Layout>
     </div>
   );

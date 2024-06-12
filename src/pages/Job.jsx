@@ -3,6 +3,7 @@ import SearchForm from "../components/SearchForm";
 import { jobs } from "../data/jobs";
 import JobCardLong from "../components/JobCardLong";
 import Layout from "../components/Layout";
+import Paginate from "../components/Paginate";
 
 const Job = () => {
   return (
@@ -18,7 +19,7 @@ const Job = () => {
         ></div>
         <SearchForm />
         <section className="container py-5">
-          <div className="d-flex gap-5 align-items-center container">
+          <div className="d-flex gap-2 gap-md-5 align-items-center container">
             <p className="text-secondary fs-6">
               Showing <span> 10</span> of <span>20</span> results{" "}
             </p>
@@ -30,6 +31,13 @@ const Job = () => {
             return <JobCardLong key={job._id} {...job} />;
           })}
         </section>
+        <div className="container my-1">
+          <Paginate
+            currentPage={1}
+            // setCurrentPage={setCurrentPage}
+            numOfPages={3}
+          />
+        </div>
       </Layout>
     </main>
   );
