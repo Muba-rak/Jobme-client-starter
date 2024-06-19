@@ -6,6 +6,8 @@ import logo from "../assets/logo.png";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Define the validation schema using Yup
 const schema = yup.object().shape({

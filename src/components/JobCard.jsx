@@ -6,18 +6,18 @@ import MyButton from "./MyButton";
 
 const JobCard = ({
   _id,
-  title,
+  jobTitle,
   createdAt,
   logo,
-  salary,
-  company,
+  salaryRange,
+  companyName,
   mode,
   location,
 }) => {
   return (
     <div className="card mx-auto my-3 py-4 jobcard">
       <div className=" px-4">
-        <h2 className="fw-medium fs-5"> {title}</h2>
+        <h2 className="fw-medium fs-5"> {jobTitle}</h2>
         <p className="text-secondary fs-5">
           {" "}
           <span>
@@ -29,7 +29,7 @@ const JobCard = ({
           <p className="d-inline-block text-info bg-info-subtle  px-3 text-capitalize rounded-2">
             {mode}{" "}
           </p>
-          <p className="text-dark"> $ {salary} </p>
+          <p className="text-dark"> $ {salaryRange} </p>
         </div>
       </div>
 
@@ -45,7 +45,7 @@ const JobCard = ({
             />{" "}
           </div>
           <div>
-            <h2> {company} </h2>
+            <h2> {companyName} </h2>
             <p className="text-secondary">
               <span className="me-1">
                 <CiLocationOn />{" "}

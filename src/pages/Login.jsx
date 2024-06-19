@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import MyButton from "../components/MyButton";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import logo from "../assets/logo.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const [show, setShow] = useState(false);

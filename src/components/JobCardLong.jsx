@@ -6,11 +6,11 @@ import MyButton from "./MyButton";
 
 const JobCardLong = ({
   _id,
-  title,
+  jobTitle,
   createdAt,
   logo,
-  salary,
-  company,
+  salaryRange,
+  companyName,
   mode,
   location,
 }) => {
@@ -22,8 +22,8 @@ const JobCardLong = ({
             <img src={logo} style={{ width: "47px", height: "47px" }} alt="" />
           </div>
           <div>
-            <h2 className="fw-medium fs-5"> {title}</h2>
-            <h2 className="fs-6"> {company} </h2>
+            <h2 className="fw-medium fs-5"> {jobTitle}</h2>
+            <h2 className="fs-6"> {companyName} </h2>
           </div>
         </div>
 
@@ -48,7 +48,7 @@ const JobCardLong = ({
             </span>{" "}
             {location}{" "}
           </p>
-          <p className="text-dark"> $ {salary} </p>
+          <p className="text-dark"> $ {salaryRange} </p>
         </div>
         <div className=" col-lg-3 d-flex justify-content-lg-center align-items-start">
           {" "}
