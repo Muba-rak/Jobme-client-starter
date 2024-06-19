@@ -38,7 +38,7 @@ export const jobs = [
   },
   {
     _id: 3,
-    title: "UI/UX Designer",
+    jobTitle: "UI/UX Designer",
     companyName: "LinkedIn",
     salaryRange: "50-60k",
     mode: "part time",

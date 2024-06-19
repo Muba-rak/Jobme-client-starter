@@ -9,7 +9,7 @@ const Paginate = ({ currentPage, setCurrentPage, numOfPages }) => {
   const buttonStyles = (isDisabled) => ({
     cursor: isDisabled ? "not-allowed" : "pointer",
   });
-  console.log({ currentPage, pageNumbers, numOfPages });
+  // console.log({ currentPage, pageNumbers, numOfPages });
   return (
     <ul className="pagination mx-auto gap-3 w-25 d-flex justify-content-center">
       <li className="page-item">

@@ -14,6 +14,11 @@ const AppliedJobs = () => {
       return "bg-success";
     }
   };
+
+  const handleIdUpdate = (id) => {
+    setShowModal(true);
+    setUpdateId(id);
+  };
   return (
     <div>
       <Layout>
@@ -31,16 +36,22 @@ const AppliedJobs = () => {
           </p>
           <div>
             {jobs.map((job) => {
-              const { title, company, location, dateApplied, status, _id } =
-                job;
+              const {
+                jobTitle,
+                companyName,
+                location,
+                dateApplied,
+                status,
+                _id,
+              } = job;
               return (
                 <div
                   key={_id}
                   className=" border border-black border-start-0 border-end-0 border-top-1 border-bottom-2 py-2 my-3 mx-auto d-md-flex justify-content-between align-items-center"
                 >
                   <div className="col-md-6">
-                    <h3> {title} </h3>
-                    <p className="fs-5 my-1">{company} </p>
+                    <h3> {jobTitle} </h3>
+                    <p className="fs-5 my-1">{companyName} </p>
                     <p className="fs-5 my-1"> {location} </p>
                     <p className="fs-5 my-1">
                       <span className="fw-bold">Date of Application: </span>
@@ -50,10 +61,7 @@ const AppliedJobs = () => {
                   <div className="d-flex mt-3 mt-md-0 gap-2 justify-content-md-end align-items-center col-md-6">
                     <p>
                       <button
-                        onClick={() => {
-                          setShowModal(true);
-                          setUpdateId(_id);
-                        }}
+                        onClick={() => handleIdUpdate(_id)}
                         className="btn border border-1 border-tertiary rounded-4 bg-transparent text-info fs-5 px-3"
                       >
                         Update Status

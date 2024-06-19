@@ -5,8 +5,8 @@ import { MdClose } from "react-icons/md";
 
 const UpdateStatusModal = ({ id, showModal, setShowModal }) => {
   const [progress, setProgress] = useState("");
-  //   console.log(id);
-  //   console.log(progress);
+  console.log(id);
+  console.log(progress);
 
   return (
     <div>
