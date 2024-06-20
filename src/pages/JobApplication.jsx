@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Layout from "../components/Layout";
 import MyButton from "../components/MyButton";
 import { SuccessModal } from "../components";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const JobApplication = () => {
   const [showModal, setShowModal] = useState(false);

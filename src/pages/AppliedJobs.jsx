@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { jobs } from "../data/jobs";
 import UpdateStatusModal from "../components/UpdateStatusModal";
 import Paginate from "../components/Paginate";
+import Loader from "../components/Loader";
 
 const AppliedJobs = () => {
   const [showModal, setShowModal] = useState(false);

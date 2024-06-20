@@ -6,6 +6,7 @@ import {
   JobInfo,
 } from "../components/JobDetailsComponent";
 import Layout from "../components/Layout";
+import Loader from "../components/Loader";
 
 const JobDetails = () => {
   return (

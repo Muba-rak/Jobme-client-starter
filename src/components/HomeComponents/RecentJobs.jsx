@@ -1,6 +1,7 @@
 import React from "react";
 import { jobs } from "../../data/jobs";
 import JobCard from "../JobCard";
+import Loader from "../Loader";
 const RecentJobs = () => {
   return (
     <section>
