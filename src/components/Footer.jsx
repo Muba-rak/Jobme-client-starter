@@ -15,7 +15,7 @@ const Footer = () => {
   ];
   return (
     <footer className="border border-start-0 border-end-0 border-top-2 border-secondary border-bottom-2 py-5 my-5">
-      <div className="container d-lg-flex justify-content-between align-items-center">
+      <div className="container d-flex justify-content-between align-items-center">
         <div>
           <Link to="/">
             <img src={logo} alt="Logo" />

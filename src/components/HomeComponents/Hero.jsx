@@ -7,8 +7,8 @@ const Hero = () => {
   return (
     <div className="hero-section">
       <div>
-        <h1 className="text-white mainfont text-center fw-bold mb-4">
-          FIND JOBS AND HIRE AMAZING <br /> TALENTS!
+        <h1 className="text-white mainfont text-center fw-medium mb-4">
+          SECURE JOBS AS AN AMAZING <br /> TALENT!
         </h1>
         <div className="d-none d-lg-block">
           <SearchForm />
