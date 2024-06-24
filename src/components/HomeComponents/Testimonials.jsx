@@ -7,12 +7,15 @@ const Testimonials = () => {
       <div className="container text-center">
         <h2 className="fs-5 text-info fw-medium">Testimonials</h2>
         <h1 className="fs-1 text-dark mb-5 mt-2">Feedbacks from Clients</h1>
-        <div className="row justify-content-between align-items-center ">
+        <div
+          className=" d-flex justify-content-between align-items-center gap-4 example "
+          style={{ overflowX: "auto" }}
+        >
           {testimonials.map((t) => {
             return (
               <div
                 key={t.id}
-                className="col-xl-3 mx-auto my-3 my-lg-0 bg-body-tertiary card testimonial-card"
+                className="col-12 mx-auto my-3 my-lg-0 bg-body-tertiary card testimonial-card"
               >
                 <img src={t.image} className="card-image" alt={t.name} />
                 <p className="my-2">{t.testimonial}</p>
