@@ -1,11 +1,22 @@
 import React from "react";
 import how from "../../assets/how.png";
+import howm from "../../assets/howm.png";
 import RecentJobs from "./RecentJobs";
 
 const HowItWorks = () => {
   return (
     <section>
       <div className="howitworks container py-5">
+        <div className="mt-lg-5 d-block d-xl-none">
+          <h1 className="text-center fw-medium">How it works</h1>
+          <div className="my-2">
+            <img
+              src={howm}
+              alt="How it works"
+              className=" mx-auto d-block img-fluid"
+            />
+          </div>
+        </div>
         <div className="mt-lg-5 d-none d-xl-block">
           <h1 className="text-center fw-medium">How it works</h1>
           <div className="text-center mx-auto my-5 ">
