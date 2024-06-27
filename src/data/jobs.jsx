@@ -122,6 +122,18 @@ export const jobs = [
     status: "hired",
     dateApplied: "April 15, 2024",
   },
+  {
+    _id: 10,
+    jobTitle: "Software Tester",
+    companyName: "Apple",
+    salaryRange: "90-100k",
+    mode: "remote",
+    location: "Kenya",
+    createdAt: "13 Days ago",
+    logo: Apple,
+    status: "hired",
+    dateApplied: "April 17, 2024",
+  },
 ];
 
 export const testimonials = [
