@@ -218,4 +218,5 @@ export const industry = [
   "construction",
   "Information and Technology",
   "finance",
+  "design",
 ];
