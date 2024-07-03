@@ -214,3 +214,8 @@ export const status = [
 
 export const jobType = ["fulltime", "part time", "contract", "freelance"];
 export const mode = ["remote", "on-site", "hybrid"];
+export const industry = [
+  "construction",
+  "Information and Technology",
+  "finance",
+];

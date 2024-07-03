@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { jobType, mode } from "../data/jobs";
+import { jobType, mode, industry } from "../data/jobs";
 
 const SearchForm = () => {
   const path = useLocation().pathname;
@@ -14,12 +14,12 @@ const SearchForm = () => {
           <select
             name=""
             id="job"
-            className=" form-select py-2  px-xl-4 rounded-2 fs-5 "
+            className=" form-select py-2  px-xl-4 rounded-2 fs-5 text-capitalize "
           >
             <option value="">Select Job Type</option>
             {jobType.map((type, i) => {
               return (
-                <option key={i} value={type} className="text-capitalize">
+                <option key={i} value={type}>
                   {" "}
                   {type}{" "}
                 </option>
@@ -29,19 +29,27 @@ const SearchForm = () => {
           <select
             name=""
             id="industry"
-            className="form-select py-2 px-xl-4 rounded-2 fs-5"
+            className="form-select py-2 px-xl-4 rounded-2 fs-5 text-capitalize"
           >
             <option value="">Select Industry</option>
+            {industry.map((type, i) => {
+              return (
+                <option key={i} value={type}>
+                  {" "}
+                  {type}{" "}
+                </option>
+              );
+            })}
           </select>
           <select
             name=""
             id="mode"
-            className="form-select py-2 px-xl-4 rounded-2 fs-5"
+            className="form-select py-2 px-xl-4 rounded-2 fs-5 text-capitalize"
           >
             <option value="">Select Mode of Work</option>
             {mode.map((m, i) => {
               return (
-                <option key={i} value={m} className="text-capitalize">
+                <option key={i} value={m}>
                   {m}
                 </option>
               );
