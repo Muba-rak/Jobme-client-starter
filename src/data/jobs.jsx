@@ -216,7 +216,7 @@ export const jobType = ["fulltime", "part time", "contract", "freelance"];
 export const mode = ["remote", "on-site", "hybrid"];
 export const industry = [
   "construction",
-  "Information and Technology",
+  "Information Technology",
   "finance",
   "design",
   "Marketing and Advertising",
