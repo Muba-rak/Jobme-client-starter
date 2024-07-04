@@ -2,18 +2,7 @@ import React from "react";
 import MyButton from "../MyButton";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-
-const schema = yup.object().shape({
-  name: yup.string().required("Name is required"),
-  email: yup.string().email("Invalid email").required("Email is required"),
-  phoneNumber: yup
-    .string()
-    .matches(/^[0-9]+$/, "Phone number is not valid")
-    .required("Phone number is required"),
-  subject: yup.string().required("Subject is required"),
-  message: yup.string().required("Message is required"),
-});
+import { contactschema } from "../../utils/formValidator";
 
 const ContactForm = () => {
   const {
@@ -21,7 +10,7 @@ const ContactForm = () => {
     handleSubmit,
     formState: { errors },
   } = useForm({
-    resolver: yupResolver(schema),
+    resolver: yupResolver(contactschema),
   });
 
   const onSubmit = (data) => {
